@@ -16,18 +16,6 @@ import { ListaAddComponent } from './components/lista-add/lista-add.component';
 // para poder usar el forms model 
 import { FormsModule } from '@angular/forms';
 
-const config = {
-  apiKey: "AIzaSyCA86EO2xjYrUNXdw-1Qk6-MgbVLm7rDdQ",
-    authDomain: "crudinfirebase-bbfa7.firebaseapp.com",
-    databaseURL: "https://crudinfirebase-bbfa7.firebaseio.com",
-    projectId: "crudinfirebase-bbfa7",
-    storageBucket: "crudinfirebase-bbfa7.appspot.com",
-    messagingSenderId: "335657921739",
-    appId: "1:335657921739:web:efc9314436c2e4aae23f4e",
-    measurementId: "G-159L214YKX"
-  };
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +24,6 @@ const config = {
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(config),
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
