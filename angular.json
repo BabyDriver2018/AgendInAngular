@@ -121,5 +121,8 @@
         }
       }
     }},
+    "scripts": {
+      "start": "node tu-script-main.js"
+    },
   "defaultProject": "firebaseAngular"
 }
