@@ -112,7 +112,7 @@
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "firebaseAngular:serve"
           },
-          "prod": "ng build --prod --base-href=\"./\"",
+         
           "configurations": {
             "production": {
               "devServerTarget": "firebaseAngular:serve:production"
@@ -121,8 +121,6 @@
         }
       }
     }},
-    "scripts": {
-      "start": "node tu-script-main.js"
-    },
+    
   "defaultProject": "firebaseAngular"
 }
