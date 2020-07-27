@@ -18,6 +18,10 @@ import { ListaAddComponent } from './components/lista-add/lista-add.component';
 import { FormsModule } from '@angular/forms';
 
 
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = []
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     ListaAddComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
     BrowserModule,
     FormsModule,
     AngularFireDatabaseModule,
@@ -35,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     
 
   ],
+  exports: [RouterModule] ,
   providers: [
     ConexionService,
     AngularFireDatabase,
