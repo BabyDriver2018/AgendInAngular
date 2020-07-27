@@ -1,5 +1,4 @@
 import { AngularFirestore } from 'angularfire2/firestore';
-
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 

@@ -18,18 +18,6 @@ import { ListaAddComponent } from './components/lista-add/lista-add.component';
 import { FormsModule } from '@angular/forms';
 
 
-/* const config = {
-  apiKey: "AIzaSyCA86EO2xjYrUNXdw-1Qk6-MgbVLm7rDdQ",
-    authDomain: "crudinfirebase-bbfa7.firebaseapp.com",
-    databaseURL: "https://crudinfirebase-bbfa7.firebaseio.com",
-    projectId: "crudinfirebase-bbfa7",
-    storageBucket: "crudinfirebase-bbfa7.appspot.com",
-    messagingSenderId: "335657921739",
-    appId: "1:335657921739:web:efc9314436c2e4aae23f4e",
-    measurementId: "G-159L214YKX"
-} */
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +27,12 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
-    // AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
-
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    
 
   ],
   providers: [
