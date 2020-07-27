@@ -11,10 +11,6 @@
     "prod": "ng build --prod --base-href=\"./\""
     
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.3",
